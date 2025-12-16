@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkUp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>LinkUp</h1>
+
+<div id="notification"></div>
+
+<section>
+  <h2>Create Profile</h2>
+  <input id="profile-username" placeholder="Username">
+  <input id="profile-avatar" placeholder="Avatar URL">
+  <button onclick="createProfile()">Save</button>
+</section>
+
+<section>
+  <h2>Theme</h2>
+  <select id="theme-select" onchange="changeTheme()">
+    <option value="">Default</option>
+    <option value="dark">Dark</option>
+    <option value="sunny">Sunny</option>
+  </select>
+</section>
+
+<section>
+  <h2>New Post</h2>
+  <input id="post-input" placeholder="What's on your mind?">
+  <label>
+    <input type="checkbox" id="premium-checkbox"> Premium
+  </label>
+  <button onclick="addPost()">Post</button>
+</section>
+
+<section>
+  <h2>Feed</h2>
+  <ul id="feed"></ul>
+</section>
+
+<section>
+  <h2>Chat</h2>
+  <div id="chat-box"></div>
+  <input id="chat-username" placeholder="Username">
+  <input id="chat-message" placeholder="Message">
+  <button onclick="sendMessage()">Send</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+  </html>
